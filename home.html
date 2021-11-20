@@ -2,63 +2,94 @@
 <html>
 <head>
 	<title>very epic </title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </head>
 <body>
-
-<article>
- <header>
+<!--
+ <header class = "title">
     <h1>The Food app</h1>
  </header>
- </article>
+-->
  <!-- nav bar-->
- <nav>
- 	<a href="https://discord.com/channels/@me">trending</a>
- 	<a href="https://www.youtube.com/">post</a>
- 	<a href="https://www.w3schools.com/tags/tag_header.asp">profile</a>
- 	<a href="https://github.com/">saved</a>
-    <nav>
-    	<a href="https://github.com/">github</a>
+  <nav>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
     </nav>
- </nav>
-  <!-- search bar-->
- <div>
- <input type="text" placeholder="Search..">	
- </div>
+ <!-- search bar-->
+   <div class="wrapper">
+    <div class="container">
+      <form role="search" method="get" class="search-form form" action="">
+        <label>
+            <span class="screen-reader-text">Search for...</span>
+            <input type="search" class="search-field" placeholder="Type something..." value="" name="s" title="" />
+        </label>
+        <input type="submit" class="search-submit button" value="&#xf002" />
+    </form>
+    </div>
+  </div>
+ 
  <!-- divsion for recipes-->
- <div>
- 	<article>
+ <div id = "recipes">
+ 	<ul>
+ 	<li>
  		<h2>Title</h2>
  		<p>description</p>
  		<button>like</button>
  		<button>save</button>
  		<button>comment</button>
  		<button>share</button>
- 	</article>
+ 	</li>
+ </ul>
  </div>
-  <div>
+  <div id = "reviews">
   	 <!-- divsion for restruant reviews-->
- 	<article>
+  <ul class = "post">
+ 	<li>
  		<h2>restruant name </h2>
  		<p>review</p>
  		<button>like</button>
  		<button>comment</button>
- 	    <span>rating system</span>
- 	</article>
+ 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+ 	</li>
+ </ul>
  </div>
- <div>
+ <div id = "blogs">
   	 <!-- divsion for food blogs-->
- 	<article>
+ <ul>
+ 	<li>
  		<h2>Title</h2>
  		<p>description</p>
  		<button>like</button>
  		<button>save</button>
  		<button>comment</button>
  		<button>share</button>
- 	</article>
+ 	</li>
+ </ul>
  </div>
- <!--Thinking of making a division for restruant news and ads for new restruants to promote themselves but havent thought of it fully, suggest ideas-->
+ <!--Thinking of making a division for restruant news and ads for new restruants to promote them selves but havent thought of it fully, suggest ideas-->
 <footer>
 	<h3>footer</h3>
 </footer>
+
 </body>
 </html>
