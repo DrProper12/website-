@@ -1,5 +1,5 @@
 html, body {
-  background: #bec4da;
+  background: #f0f2e7;
   padding: 0;
 }
 
@@ -111,7 +111,7 @@ input.search-submit {
 nav{
     height: 4rem;
     width: 100vw;
-    background-color: #4056a1;
+    background-color: #e0e300;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: inline;
     position: fixed;
@@ -138,10 +138,10 @@ nav{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 0.7vw;
-    color: lightgray;
+    color: #f0f2e7;
 }
 .nav-links li a:hover {
-    color: #1a0061;
+    color: #00bfaf;
 }
 .nav-links li {
     position: relative;
@@ -151,7 +151,7 @@ nav{
     display: block;
     height: 3px;
     width: 0%;
-    background-color: #1a0061;
+    background-color: #00bfaf;
     position: absolute;
     transition: all ease-in-out 250ms;
     margin: 0 0 0 10%;
@@ -212,6 +212,67 @@ nav{
         opacity: 1;
     }
 }
+
+button{
+ background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  
+ 
+  box-shadow: inset 0 0 0 2px #ff8296;
+  color: #ff8296;
+  font-size: inherit;
+  font-weight: 700;
+
+  
+  position: relative;
+  vertical-align: middle;
+}
+  button::before,
+  button::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  button:hover {
+    color: #75cdd8;
+  }
+
+ 
+  button::before,
+  button::after {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center; 
+  }
+
+  button::before {
+    border-top: 2px solid #75cdd8;
+    border-bottom: 2px solid #75cdd8;
+    transform: scale3d(0,1,1); 
+  }
+
+  button::after {
+    border-left: 2px solid #75cdd8;
+    border-right: 2px solid #75cdd8;
+    transform: scale3d(1,0,1); 
+  }
+
+  button:hover::before,
+  button:hover::after {
+    transform: scale3d(1,1,1); 
+    transition: transform 0.5s;
+  }
+}
+
+
 
 
 
