@@ -44,25 +44,26 @@
   </div>
  
  <!-- divsion for recipes-->
- <div id = "recipes">
+ <div class = "">
  	<ul>
  	<li>
  		<h2>Title</h2>
  		<p>description</p>
- 		<button>like</button>
+ 		<button id = "recipeLike">like</button>
+    <label id = "recipeLikes"> 0</label> 
  		<button>save</button>
  		<button>comment</button>
  		<button>share</button>
  	</li>
  </ul>
- </div>
-  <div id = "reviews">
+ </div>s
+  <div class = "reviews">
   	 <!-- divsion for restruant reviews-->
   <ul class = "post">
  	<li>
  		<h2>restruant name </h2>
  		<p>review</p>
- 		<button>like</button>
+ 		<button id = "reviewLike">like</button>
  		<button>comment</button>
  	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <span class="fa fa-star checked"></span>
@@ -73,13 +74,14 @@
  	</li>
  </ul>
  </div>
+ <!-- divsion for food blogs-->
  <div id = "blogs">
-  	 <!-- divsion for food blogs-->
+  	 
  <ul>
  	<li>
  		<h2>Title</h2>
  		<p>description</p>
- 		<button>like</button>
+ 		<button id = "blogLike">like</button>
  		<button>save</button>
  		<button>comment</button>
  		<button>share</button>
@@ -90,6 +92,7 @@
 <footer>
 	<h3>footer</h3>
 </footer>
-
+ <script src = "nav.js"></script>
+<script src = "like.js"></script>
 </body>
 </html>
