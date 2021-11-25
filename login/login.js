@@ -62,7 +62,7 @@ document.getElementById("goRegister").onclick = function(){
 setInterval(() => {
     let loggedInParsed = JSON.parse(localStorage.getItem("loggedIn"))
     if(loggedInParsed == true){
-        location.replace("profile.html")
+        location.replace("/login/profile/profile.html")
         //to send you to the profile page if you are logged in(
     }
 }, 500);

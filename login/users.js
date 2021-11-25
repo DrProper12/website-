@@ -5,9 +5,9 @@ export var allUsers = [
         email: "acjha990@gmail.com"
     },
     {
-    username: "Abbu",
-    password: "Abdullah",
-    email: "abbu@example.com"
+        username: "Abbu",
+        password: "Abdullah",
+        email: "abbu@example.com"
     }
 ]
 let usersArrayInLocal = JSON.parse(localStorage.getItem("Users"))
@@ -45,4 +45,12 @@ export function removeUser(index){
     var deltedAcc = usersHere.splice(index, 1)
     localStorage.setItem("Users", JSON.stringify(usersHere))
     return deltedAcc
+}
+
+export function renameUser(index, newUsername){
+    let tempusersHere = localStorage.getItem("Users")
+    let usersHere = JSON.parse(tempusersHere)
+    usersHere[index].username = newUsername
+    localStorage.setItem("Users", JSON.stringify(usersHere))
+    localStorage.setItem("SESSION_NAME", newUsername)
 }

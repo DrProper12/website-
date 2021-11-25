@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label id = "welcome">Hello, Welcome</label>
+    <button type = "button" id = "logoutPlease">Logout</button>
+    <a href="/home/home.html">Go Home</a><br>
+    <button type = "button" id = "settingPage">Go To settings</button>
+
+
+    <script>
+        let sessionName = localStorage.getItem("SESSION_NAME")
+        let loggedIn = JSON.parse(localStorage.getItem("loggedIn"))
+        let loggedIn2 = JSON.parse(localStorage.getItem("loggedInConst"))
+        if((loggedIn == false) && (loggedIn2 == false)){
+            location.replace("/login/login.html")
+        }
+        document.getElementById("welcome").innerHTML += " " + sessionName
+        
+    </script>
+    <script type = "module" src = "logout.js"></script>
+</body>
+</html>
