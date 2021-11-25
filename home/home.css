@@ -1,0 +1,240 @@
+@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
+html, body {
+  background: #f7f2f7;
+  padding: 0;
+}
+.head{
+   display:flex;
+   background:#f7f7f7;
+   position:fixed;
+   width:100%;
+   height: 10%;
+   z-index: 9;
+   top:0;
+   left:0;
+}
+.head h2{
+  display: inline;
+  width:90%;
+  margin-bottom:10px;
+  margin-left: 90px;
+  font-family: Arial;
+  font-weight:lighter;
+  color: #2e4c6d;
+}
+button{
+  display:inline;
+  background-color:#f7f7f7;
+  margin-left: 60%;
+  
+  top:0;
+  right:0;
+  border: none; /* Remove borders */
+  font-size: 60px
+  font-weight:bold;
+  color: #2e4c6d; /* White text */
+ 
+  height:60px;
+  width:200px;
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+button:hover {
+  background-color: #2e4c6d;
+  color:#f7f7f7;
+}
+
+
+.menu,.menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    z-index:10;  
+    overflow:hidden;
+    box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+}
+.menu li a{
+  display: block;
+  text-indent: -500em;
+  height: 5em;
+  width: 5em;
+  line-height: 5em;
+  text-align:center;
+  color: #72739f;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.1s ease-in-out;
+}
+.menu li a:before {
+  font-family: FontAwesome;
+  speak: none;
+  text-indent: 0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.4em;
+}
+.menu li a.search:before {
+  content: "\f14e";
+}
+.menu li a.blogs:before {
+  content: "\f781";
+}
+.menu li a.recipes:before {
+  content: "\f805";
+}
+.menu li a.profile:before {
+  content: "\f007";
+}
+.menu li a.restaurant:before {
+  content: "\f54e";
+}
+.menu li a.home:before {
+  content: "\f015";
+}
+.menu-bar li a:hover,
+.menu li a:hover,
+.menu li:first-child a {
+  background: #2e4c6d;
+  color: #fff;
+}
+.menu-bar{
+    overflow:hidden;
+    left:5em;
+    z-index:5;
+    width:0;
+    height:0;
+    transition: all 0.1s ease-in-out;
+}
+.menu-bar li a{
+  display: block;
+  height: 4em;
+  line-height: 4em;
+  text-align:center;
+  color: #72739f;
+  text-decoration:none;  
+  position: relative;
+  font-family: verdana;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.1s ease-in-out;
+}
+.menu-bar li:first-child a{
+    height:5em;
+    background: #267fdd;
+    color: #fff;    
+    line-height:5
+}
+
+
+.para{
+    color:#033f72;
+    padding-left:100px;
+    font-size:3em;
+    margin-bottom:20px;
+}
+
+.open{
+    width:10em;
+    height:100%;
+}
+
+@media all and (max-width: 500px) {
+    .container{
+        margin-top:100px;
+    }
+    .menu{
+        height:5em;
+        width:100%;
+    }
+    .menu li{
+        display:inline-block;
+        float:left;
+    }
+    .menu-bar li a{
+        width:100%;
+    }
+    .menu-bar{
+        width:100%;
+        left:0;
+        height:0;
+    }
+    .open{
+        width:100%;
+        height:auto;
+    }
+    .para{
+    padding-left:5px;
+}  
+}
+@media screen and (max-height: 34em){
+  .menu li,
+  .menu-bar {
+    font-size:70%;
+  }
+}
+@media screen and (max-height: 34em) and (max-width: 500px){
+  .menu{
+        height:3.5em;
+    }
+}
+
+.items {
+    position: relative;
+    margin-top:40px;
+    margin-left: 70px;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background: #daddfc;
+    box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .items.active {
+    background: rgba(255,255,255,0.3);
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+  }
+
+  .item {
+    display: inline-block;
+    background: #fc997c;
+    border-radius: 20px;
+    box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+    min-height: 250px;
+    min-width: 400px;
+    margin: 2em 1em;
+@media screen and (max-width: 500px) {
+      min-height: 200px;
+      min-width: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
