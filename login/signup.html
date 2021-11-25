@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
-    <script src = "logsign.js">
-        const location = "signPage"
-    </script>
+    
+    <h1>Food website</h1>
+    <input type = "text" id = "username" placeholder="Display Name" required><br>
+    <input type = "email" id = "email" placeholder="Email Address" required><br>
+    <input type = "password" id = "password" placeholder="Password" required><br>
+    <button type = "button" id = "signUpButton">Sign Up</button>
+    <button type = "button" id = "goLogin">Go back to login</button><br>
+    <label id = "errorLabel"></label>
+
+    <script type = "module" src = "signup.js"></script>
+
 </body>
 </html>
